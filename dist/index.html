@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="main.js" defer></script>
     <title>Todo List</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">Header</div>
-        <div class="sidebar">Sidebar</div>
+    <div class="wrapper">
+        <div class="header">
+            <i class="bi bi-check2-circle mx-2"></i>
+            <h2>Todo List</h2>
+        </div>
+        <div class="sidebar">
+            <div class="todos">
+                <button class=" bi bi-inbox btn btn-warning">  Inbox</button>
+                <button class="bi bi-calendar-check btn btn-warning">  Today</button>
+                <button class="bi bi-calendar-check btn btn-warning">  This Week</button>
+            </div>
+            <div class="project fw-bold fs-2">
+                Project
+                <button class="bi bi-plus-square btn btn-warning m-3">  Project</button>
+            </div>
+        </div>
         <div class="content">content</div>
-        <div class="footer">footer</div>
+        <div class="footer">
+            <p class="fs-4">Copyright © 2021 GaganGanapathy</p>
+            <a href="https://github.com/GaganGanapathy" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
     </div>
 </body>
 </html>

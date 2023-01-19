@@ -1,14 +1,63 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
-.container {
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
     display: grid;
     width: 100vw;
     height: 100vh;
+    margin: 0;
+    padding: 0;
     grid-template-columns: 25% 75%;
     grid-template-rows: 20% 75% 5%;
+
+
 }
 .header {
     grid-column-start: 1;
     grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+.header i{
+    font-size: xx-large;
+}
+.todos {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.todos button {
+    display: block;
+    width: 200px;
+    
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project button {
+    width: 200px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    a>i{
+        margin: 5px;
+        font-size: x-large;
+    }
 }
